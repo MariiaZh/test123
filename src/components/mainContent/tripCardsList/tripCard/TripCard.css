@@ -1,0 +1,64 @@
+.tripCard {
+    width: 200px;
+    width: calc(100vw / 7);
+    border: 1px solid lightgray;
+    margin: 0 20px 20px;
+    scroll-behavior: auto;
+}
+
+.checkedCard {
+    width: 210px;
+    width: calc(100vw / 7 + 10px);
+    margin: 0 15px 15px;
+    scroll-behavior: auto;
+    border: 2px solid #b4dbff;
+}
+
+.tripArray:nth-child(4n + 1) {
+    margin-left: 0;
+}
+
+.checkedCard:nth-child(4n + 1) {
+    margin: 0 10px 15px 0;
+}
+
+.imageWrapper {
+    width: 200px;
+    height: 200px;
+    width: calc(100vw / 7);
+    --widthH: calc(100vw / 7);
+    height: calc(var(--widthH));
+    display: flex;
+    background-color: lightgray;
+}
+
+.checkedImage {
+    width: 210px;
+    height: 210px;
+    width: calc(100vw / 7 + 10px);
+    --widthH: calc(100vw / 7 + 10px);
+    height: calc(var(--widthH));
+    display: flex;
+    background-color: lightgray;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.city {
+    margin: 16px;
+    font-weight: 600;
+}
+
+.date {
+    margin: 16px;
+    color: #9d9d9d;
+}
+
+.newTrip {
+    border: 1px solid green;
+    box-shadow: 0 0 7px 3px rgba(0, 128, 0, 0.5);
+}

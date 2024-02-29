@@ -1,0 +1,113 @@
+.header {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.headerText {
+    margin: 0 25px 25px;
+    font-weight: 400;
+}
+
+.headerWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    display: block;
+    margin: 25px;
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    outline: none;
+    border: 0;
+    background: url(../../../assets/search_3031293.png) no-repeat scroll 10px;
+    background-size: 18px;
+    background-color: #f2f4f8;
+    padding-left: 40px;
+}
+
+.headerBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 40px;
+    background-color: #f2f4f8;
+    border: 2px solid #f2f4f8;
+    border-radius: 12px;
+}
+
+.headerSortTitle {
+    margin: 0 10px;
+    padding: 0;
+    font-weight: 600;
+}
+
+.sort {
+    display: block;
+    margin: 0;
+    width: 70px;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    background-color: #f2f4f8;
+    background-size: 25px;
+    color: darkgray;
+}
+
+.activeSort {
+    background-color: white;
+    border: 1px solid #f2f4f8;
+    color: black;
+}
+
+.sort:hover {
+    color: black;
+}
+.sort:active {
+    color: #1890ff;
+}
+
+.deleteBtn {
+    display: block;
+    margin: 25px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: url("../../../assets/bin_484662.png") no-repeat;
+    background-size: 25px;
+    filter: invert(80%);
+}
+
+.addBtn {
+    display: block;
+    margin: 25px;
+    margin-left: 50px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: url("../../../assets/plus_748113.png") no-repeat;
+    background-size: 25px;
+}
+
+.deleteBtn:hover,
+.addBtn:hover {
+    background-size: 28px;
+}
+.deleteBtn:active,
+.addBtn:active {
+    background-size: 28px;
+    filter: invert(60%);
+}
+
+.deleteDisable {
+    filter: invert(0);
+}
+.deleteDisable:hover {
+    background-size: 25px;
+}
+.deleteBtn:active {
+    background-size: 25px;
+    filter: invert(100%);
+}

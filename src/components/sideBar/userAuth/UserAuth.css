@@ -1,0 +1,73 @@
+.userWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    height: 100px;
+    margin: 30px 25px 130px;
+}
+
+.loginWrapper {
+    justify-content: space-around;
+}
+
+.userWrapper div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userWrapper div:hover {
+    cursor: pointer;
+}
+
+.loginIcon {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.loginPicture {
+    width: 70px;
+    height: 70px;
+    filter: invert(0);
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.logoutIcon {
+    display: block;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+.logoutIcon:hover {
+    width: 22px;
+    height: 22px;
+}
+.logoutIcon:active {
+    width: 22px;
+    height: 22px;
+    filter: invert(60%);
+}
+
+.userName {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.userNameSmall {
+    font-size: 10px;
+}
+
+.userWrapper div:active .loginIcon,
+.userWrapper div:active h2 {
+    filter: invert(60%);
+}

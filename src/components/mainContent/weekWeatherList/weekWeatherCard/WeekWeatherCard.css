@@ -1,0 +1,36 @@
+.weatherWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 160px;
+    margin: 10px;
+}
+
+.weatherWrapper:first-child {
+    margin-left: -10px;
+}
+
+.dayName {
+    color: darkgray;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.temperature {
+    color: #45496f;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.dayImage {
+    width: 70px;
+    height: auto;
+    margin: 10px;
+}
+
+.dayImage:first-child {
+    margin-left: 0;
+}

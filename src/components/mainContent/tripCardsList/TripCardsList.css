@@ -1,0 +1,52 @@
+.tripCardsList {
+    display: flex;
+    flex-flow: row wrap;
+    width: 960px;
+    min-height: 310px;
+    height: 200px;
+    width: calc(100vw / 7 * 4 + 168px);
+    --widthH: calc(100vw / 7 + 110px);
+    height: calc(var(--widthH));
+    overflow-x: auto;
+}
+
+.cardsListBtns {
+    display: flex;
+}
+
+.next,
+.previous {
+    display: block;
+    margin: 10px 10px 0 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: url("../../../assets/right-arrow_545682.png") no-repeat;
+    background-size: 25px;
+}
+
+.previous {
+    transform: scaleX(-1);
+    margin-right: 0;
+}
+
+.next:hover,
+.previous:hover {
+    background-size: 28px;
+    margin-top: 8px;
+}
+.next:active,
+.previous:active {
+    background-size: 28px;
+    margin-top: 8px;
+    filter: invert(60%);
+}
+
+.disabledNext,
+.disabledNext:hover,
+.disabledNext:active {
+    opacity: 0.3;
+    background-size: 25px;
+    margin-top: 10px;
+    filter: invert(0);
+}

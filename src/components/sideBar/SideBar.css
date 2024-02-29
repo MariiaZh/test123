@@ -1,0 +1,60 @@
+.mainSideBar {
+    background-image: url("../../assets/clouds.png");
+    background-size: cover;
+    width: 700px;
+    height: 100%;
+}
+.sbContentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sbWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sbHeader {
+    color: white;
+    font-size: 3em;
+    margin: 15px 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.sbIconWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row nowrap;
+}
+
+.sbIconWrapper img {
+    width: 90px;
+    display: block;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+.sbIconWrapper h1 {
+    color: white;
+    font-size: 5em;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+.sbIconWrapper sup {
+    position: relative;
+    bottom: 25px;
+    color: white;
+    font-size: 22pt;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.sbCity {
+    color: white;
+    font-size: 2em;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,31 @@
+.addCard {
+    margin: 0 20px;
+}
+
+.addWrapper {
+    /* if not support calc() */
+    width: 200px;
+    height: 200px;
+    /* for support calc() */
+    width: calc(100vw / 7 + 2px);
+    --widthH: calc(100vw / 7);
+    height: calc(var(--widthH) - 2px);
+    background: url(../../../../assets/plus-symbol-button_32563.png) no-repeat
+        scroll center 40%;
+    background-size: 18px;
+    background-color: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addWrapper:hover {
+    background-size: 24px;
+    cursor: pointer;
+}
+
+h3 {
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 1.7em;
+}

@@ -1,0 +1,74 @@
+.modalAuth {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+
+.modalActive {
+    display: flex;
+}
+
+.authForm {
+    height: 100vh;
+    width: 25vw;
+    background-color: white;
+    border-radius: 12px 0 0 12px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.authHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.authHeaderWrapper {
+    border-bottom: 1px solid lightgray;
+}
+.authHeader h3 {
+    padding: 25px 0 0 25px;
+    margin: 0;
+}
+
+.closeButton {
+    display: block;
+    margin: 25px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: url("../../assets/close_11823086.png") no-repeat;
+    background-size: 25px;
+}
+
+.closeButton:hover {
+    background-size: 28px;
+}
+.closeButton:active {
+    background-size: 28px;
+    filter: invert(60%);
+}
+
+.googleBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+    padding: 25px;
+}
+
+.googleBtn h2 {
+    letter-spacing: 1px;
+    font-weight: 600;
+}

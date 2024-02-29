@@ -1,0 +1,136 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalActive {
+    display: flex;
+}
+
+.form {
+    height: 70vh;
+    width: 90vh;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blockHeaderWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.formHeader {
+    padding: 25px;
+    margin: 0;
+}
+
+.closeButton {
+    display: block;
+    margin: 25px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: url("../../assets/close_11823086.png") no-repeat;
+    background-size: 25px;
+}
+
+.closeButton:hover {
+    background-size: 28px;
+}
+.closeButton:active {
+    background-size: 28px;
+    filter: invert(60%);
+}
+
+.blockContentWrapper {
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.blockFooterWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+
+.cancelButton,
+.saveButton {
+    display: block;
+    margin: 25px 10px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid lightgray;
+    background-color: white;
+    font-size: 1.1em;
+    box-shadow: 5px 5px 8px rgba(16, 6, 63, 0.555);
+}
+
+.saveButton {
+    border: 1px solid #1890ff;
+    background-color: #1890ff;
+    color: white;
+    margin: 25px 25px 25px 10px;
+}
+
+.cancelButton:hover,
+.saveButton:hover {
+    box-shadow: 5px 5px 5px #188fff5b;
+}
+.cancelButton:active,
+.saveButton:active {
+    color: #0d2e4d;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px #188fff5b;
+}
+
+.disabled {
+    border: 1px solid darkgray;
+    background-color: darkgray;
+}
+
+.disabled:hover,
+.disabled:active {
+    color: white;
+    font-weight: 400;
+}
+
+.hintMsg {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 61px;
+    position: relative;
+    bottom: 120px;
+    right: 125px;
+    border-radius: 3px;
+    border: 1px solid red;
+    background-color: rgba(255, 192, 203, 0.384);
+    box-shadow: 2px 2px 4px red;
+    padding: 0 20px;
+    font-weight: 600;
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
